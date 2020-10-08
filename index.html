@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <div class="icon-container">
-            <a href="https://github.com/stjernberg" target="_blank">
-                <img class="icon" src="assets/github.svg" alt="github">
-            </a>
-            <a href="https://www.linkedin.com/in/sara-stjernberg-12b929157/" target="_blank">
-                <img class="icon" src="./assets/linkedin.svg" alt="linkedin">
-            </a>
-            <img class="icon" src="./assets/stack-overflow.svg" alt="stack-overflow">
+            <div class="icon-border">
+                <a href="https://github.com/stjernberg" target="_blank">
+                    <img class="icon" src="assets/github.svg" alt="github" />
+                </a>
+            </div>
+            <div class="icon-border">
+                <a href="https://www.linkedin.com/in/sara-stjernberg-12b929157/" target="_blank">
+                    <img class="icon" src="./assets/linkedin.svg" alt="linkedin" />
+                </a>
+            </div>
         </div>
         <div class="text-container">
             <p class="name">Portfolio: Sara Stjernberg</p>
-            <p class="title">Frontend <span class="break">developer</span></p>
+            <p class="title">Frontend <span class="break">developer</span>
+                <span="background">-background in education</span>
+            </p>
         </div>
         <div class="profile-pic"></div>
 
@@ -30,16 +35,10 @@
 
     </header>
     <section class="portfolio-section grey line-dot">
-
-        <!-- <div class="decoration">
-            <span class="line"></span>
-            <span class="circle"></span>
-        </div> -->
         <p class="text">
-            <span class="decoration"><span class="line"></span>
-            <span class="circle"></span></span>Quisque non augue consequat, tincidunt erat ut, pellentesque est. Donec finibus velit eget tellus ultrices, sed lobortis diam dictum. Aenean elementum pretium libero eget ornare. Etiam quis enim sodales,
-            egestas augue sed, consectetur lectus. Proin et fringilla arcu. Sed et fermentum enim, ut gravida ligula. Aliquam pulvinar neque eget placerat iaculis. Nulla fermentum tortor at condimentum consectetur. dui. </p>
-        <!-- </span> -->
+            <span class="line"></span>
+            <span class="circle"></span>Quisque non augue consequat, tincidunt erat ut, pellentesque est. Donec finibus velit eget tellus ultrices, sed lobortis diam dictum. Aenean elementum pretium libero eget ornare. Etiam quis enim sodales, egestas
+            augue sed, consectetur lectus. Proin et fringilla arcu. Sed et fermentum enim, ut gravida ligula. Aliquam pulvinar neque eget placerat iaculis. Nulla fermentum tortor at condimentum consectetur. dui. </p>
 
     </section>
     <section class="portfolio-section">
@@ -55,30 +54,138 @@
             FEATURED PROJECTS
         </div>
         <div class="projects">
-            <a href="https://check-the-weatherforecast.netlify.app/ target=" _blank ">
+            <a href="https://check-the-weatherforecast.netlify.app/" target=" _blank ">
                 <img src="./assets/weather-app.png " alt="weather application ">
                 <p>
                     <span class="red padding ">WEATHER-APP</span>
-                    <span class="black ">Webb app built in javascript using open weather api.<span class="red ">>></span></p>
+                    <span class="black ">Webb app built in javascript using open weather api.<span class="red underline">>></span></p>
                 <span class="pink ">HTML</span><span class="pink ">CSS</span><span class="pink ">JavaScript ES6</span>
             </a>
         </div>
-        <div class="projects ">
-            <a href="https://cluedo-myster-picker.netlify.app/ target=" _blank">
-                <img src="./assets/cluedo-app.png" alt="weather application">
+        <div class="projects">
+            <a href="https://cluedo-myster-picker.netlify.app/" target=" _blank">
+                <img src="./assets/cluedo-app.png" alt="Cleudo mystery picker">
                 <p>
                     <span class="red padding">WEATHER-APP</span>
-                    <span class="black">Webb app built in javascript using CSS animations.<span class="red">>></span></p>
+                    <span class="black">Webb app built in javascript using CSS animations.<span class="red underline">>></span></p>
                 <span class="pink">HTML</span><span class="pink">CSS</span><span class="pink">JavaScript ES6</span>
             </a>
         </div>
+        <h3 class="heading">
+            OTHER PROJECTS
+        </h3>
+        <div class="projects">
+            <a href="https://restaurant-guide.netlify.app/" target=" _blank ">
+                <p>
+                    <span class="red padding ">Restaurant guide</span>
+                    <span class="black ">Webb app built in javascript using zomato api.<span class="red underline">>></span></p>
+                <span class="pink ">HTML</span><span class="pink ">CSS</span><span class="pink ">JavaScript ES6</span>
+            </a>
+        </div>
+        <div class="projects">
+            <a href="https://pizzeriabolero.netlify.app/" target=" _blank ">
+                <p>
+                    <span class="red padding ">Online oredering pizza</span>
+                    <span class="black ">Webb app built in javascript with ordering form.<span class="red underline">>></span></p>
+                <span class="pink ">HTML</span><span class="pink ">CSS</span><span class="pink ">JavaScript ES6</span>
+            </a>
+        </div>
+        <div class="projects">
+            <a href="https://quirky-dijkstra-42346a.netlify.app/" target=" _blank ">
+                <p>
+                    <span class="red padding ">Spa booking</span>
+                    <span class="black ">A booking site for a spa built in javascript with ordering form and accordions.<span class="red underline">>></span></p>
+                <span class="pink ">HTML</span><span class="pink ">CSS</span><span class="pink ">JavaScript ES6</span>
+            </a>
+        </div>
     </section>
-    <section class="portfolio-section"></section>
-    <!-- <section class="portfolio-section grey"></section>
-    <section class="portfolio-section"></section> -->
+
+    <section class="portfolio-section">
+        <div class="text-box">
+            MY THOUGHTS
+        </div>
+        <div class="thoughts">
+            <img src="./assets/computer2.jpg" alt="computer">
+            <p>Maecenas nunc leo, porttitor et convallis non, accumsan tempus nulla. Suspendisse mollis id dolor vel faucibus. Ut rutrum erat sed pharetra efficitur. In hac habitasse platea dictumst. Aenean rhoncus faucibus congue. Nam in tincidunt felis,
+                vitae rhoncus magna. Nunc consectetur elit eget nunc laoreet, ac eleifend dui commodo. Curabitur dictum nisl a ipsum luctus, at posuere erat elementum.
+                <span class="red break underline">>></span>
+            </p>
+        </div>
+        <div class="heading">
+            MORE THOUGHTS
+        </div>
+        <p>
+            Cras lorem turpis, congue nec eros a, elementum suscipit libero. Donec ac augue nisi. Vestibulum non lectus volutpat, porta ex non, tristique leo. Ut maximus dictum magna.
+            <span class="red break underline">>></span>
+        </p>
+    </section>
+    <section class="portfolio-section grey ">
+        <div class="text-box">
+            SKILLS
+        </div>
+
+        <div class="skills">
+            <div class="skill">
+                <h4 class="red">CODE</h4>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>ES6</p>
+                <p> GitHub</p>
+                <p>Node.js</p>
+            </div>
+            <div class="skill">
+                <h4 class="red">TOOLBOX</h4>
+                <p>Visual Studio Code</p>
+                <p>Office 365</p>
+                <p>Microsoft Office</p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="skill">
+                <h4 class="red">UPCOMING</h4>
+                <p>React</p>
+                <p>SASS</p>
+            </div>
+            <div class="skill">
+                <h4 class="red">MORE</h4>
+                <p>write somthing</p>
+                <p>write somthing</p>
+                <p>write somthing</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="portfolio-section ">
+        <div class="text-box">
+            FOR MORE
+        </div>
+        <div class="icon-container-red">
+            <div class="icon-border-red col-red">
+                <a href="https://github.com/stjernberg" target="_blank">
+                    <img class="icon-red" src="assets/github-red.svg" alt="github" />
+                </a>
+            </div>
+            <div class="icon-border-red col-red">
+                <a href="https://www.linkedin.com/in/sara-stjernberg-12b929157/" target="_blank">
+                    <img class="icon-red" src="./assets/linkedin-red.svg" alt="linkedin" />
+                </a>
+            </div>
+        </div>
+
+    </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="details">
+            <h4 class="bold">CONTACT</h4>
+            <p class="bold">Sara stjernberg</p>
+            <p>+46 705602601</p>
+            <p>sara_stjernberg@hotmail.com</p>
+        </div>
+
+    </footer>
 
 </body>
 

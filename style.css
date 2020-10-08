@@ -12,7 +12,9 @@ font-family: 'Roboto', sans-serif; */
 
 header {
     height: 508px;
-    background: #ffb3b3;
+    background: url("./assets/beach.jpg") no-repeat center;
+    /* background: #ffb3b3; */
+    background-size: cover;
     padding-top: 30px;
     padding: 40px 36px 0 36px;
     display: flex;
@@ -33,6 +35,10 @@ header {
     font-weight: bold;
 }
 
+.background {
+    font-size: 20px;
+}
+
 .text-container {
     align-self: flex-start;
     justify-content: center;
@@ -44,18 +50,24 @@ header {
 }
 
 .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-border {
+    width: 50px;
+    height: 50px;
     border: 3px solid #fff;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    /* margin: 10px; */
-    /* display: flex;
+    display: flex;
+    align-items: center;
     justify-content: center;
-align-items: center; */
+    margin-right: 10px;
 }
 
 .icon-container {
     margin-top: 105px;
+    display: flex;
 }
 
 
@@ -90,7 +102,7 @@ border-radius: 50%; */
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    height: 342px;
+    height: auto;
     padding: 36px 56px;
 }
 
@@ -112,7 +124,7 @@ display: flex;
 .circle {
     width: 15px;
     height: 15px;
-    background-color: #fa382f;
+    background-color: #66aacc;
     border-radius: 50%;
     margin-left: -5px;
     margin-bottom: -5px;
@@ -123,7 +135,7 @@ display: flex;
 .line {
     width: 70px;
     height: 4px;
-    background: #fa382f;
+    background: #66aacc;
     display: inline-block;
 }
 
@@ -137,7 +149,7 @@ display: flex;
 }
 
 .text-box {
-    background: #fa382f;
+    background: #66aacc;
     color: #fff;
     font-weight: bold;
     font-size: 22px;
@@ -154,8 +166,9 @@ display: flex;
     height: 33px;
 } */
 
-.my-projects {
-    height: 1000px;
+.projects,
+.thoughts {
+    /* height: 1450px; */
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }
@@ -163,6 +176,7 @@ display: flex;
 .portfolio-section img {
     width: 100%;
     margin-top: 30px;
+    /* height: auto; */
 }
 
 a:link {
@@ -170,7 +184,7 @@ a:link {
 }
 
 .red {
-    color: #fa382f;
+    color: #66aacc;
     font-weight: bold;
 }
 
@@ -192,6 +206,81 @@ a:link {
 .projects {
     margin-top: 40px;
 }
+
+.heading {
+    color: #66aacc;
+    margin-top: 60px;
+    /* margin-bottom: -20px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.code {
+    display: block;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 50%;
+}
+
+.icon-container-red {
+    margin-top: 50px;
+    display: flex;
+}
+
+.icon-border-red {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #fa382f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+
+/* .col-red {
+    border: 3px solid #fa382f
+}*/
+
+.icon-red {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    height: 200px;
+    background: #3a70a6;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* .details {
+    line-height: 1.6;
+} */
 
 @media (min-width: 700px) {
     header {
