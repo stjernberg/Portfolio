@@ -1,58 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="icon-container">
             <a href="https://github.com/stjernberg" target="_blank">
                 <img class="icon" src="assets/github.svg" alt="github">
             </a>
             <a href="https://www.linkedin.com/in/sara-stjernberg-12b929157/" target="_blank">
-                <img class="icon" src="assets/linkedin.svg" alt="linkedin">
+                <img class="icon" src="./assets/linkedin.svg" alt="linkedin">
             </a>
-            <img class="icon" src="assets/stack-overflow.svg" alt="stack-overflow">
+            <img class="icon" src="./assets/stack-overflow.svg" alt="stack-overflow">
         </div>
-        <h1 class="header-text">Sara Stjernberg</h1>
-        <div class="profile-pic">
+        <div class="text-container">
+            <p class="name">Portfolio: Sara Stjernberg</p>
+            <p class="title">Frontend <span class="break">developer</span></p>
+        </div>
+        <div class="profile-pic"></div>
 
-        </div>
+        <main class="wrapper">
+
     </header>
     <section class="portfolio-section grey line-dot">
-
 
         <!-- <div class="decoration">
             <span class="line"></span>
             <span class="circle"></span>
         </div> -->
-        <p class="about">
+        <p class="text">
             <span class="decoration"><span class="line"></span>
             <span class="circle"></span></span>Quisque non augue consequat, tincidunt erat ut, pellentesque est. Donec finibus velit eget tellus ultrices, sed lobortis diam dictum. Aenean elementum pretium libero eget ornare. Etiam quis enim sodales,
-            egestas augue sed, consectetur lectus. Proin et fringilla arcu. Sed et fermentum enim, ut gravida ligula. Aliquam pulvinar neque eget placerat iaculis. Nulla fermentum tortor at condimentum consectetur. Aliquam eget sagittis leo, eu consectetur
-            dui. Curabitur porttitor vel massa sit amet vestibulum. In eget elementum purus. Suspendisse potenti.</p>
+            egestas augue sed, consectetur lectus. Proin et fringilla arcu. Sed et fermentum enim, ut gravida ligula. Aliquam pulvinar neque eget placerat iaculis. Nulla fermentum tortor at condimentum consectetur. dui. </p>
         <!-- </span> -->
-
-
 
     </section>
     <section class="portfolio-section">
-        <a href="project-link">
-            <img src="" alt="">
-            <h4></h4>
-            <p></p>
-            <p></p>
-        </a>
+        <div class="text-box tech">
+            TECH
+        </div>
+        <p class="tech-text">
+            HTML, CSS, JavaScript, Flexbox, API:s
+        </p>
     </section>
-    <section class="portfolio-section grey"></section>
+    <section class="portfolio-section grey my-projects">
+        <div class="text-box">
+            FEATURED PROJECTS
+        </div>
+        <div class="projects">
+            <a href="https://check-the-weatherforecast.netlify.app/ target=" _blank ">
+                <img src="./assets/weather-app.png " alt="weather application ">
+                <p>
+                    <span class="red padding ">WEATHER-APP</span>
+                    <span class="black ">Webb app built in javascript using open weather api.<span class="red ">>></span></p>
+                <span class="pink ">HTML</span><span class="pink ">CSS</span><span class="pink ">JavaScript ES6</span>
+            </a>
+        </div>
+        <div class="projects ">
+            <a href="https://cluedo-myster-picker.netlify.app/ target=" _blank">
+                <img src="./assets/cluedo-app.png" alt="weather application">
+                <p>
+                    <span class="red padding">WEATHER-APP</span>
+                    <span class="black">Webb app built in javascript using CSS animations.<span class="red">>></span></p>
+                <span class="pink">HTML</span><span class="pink">CSS</span><span class="pink">JavaScript ES6</span>
+            </a>
+        </div>
+    </section>
     <section class="portfolio-section"></section>
-    <section class="portfolio-section grey"></section>
-    <section class="portfolio-section"></section>
+    <!-- <section class="portfolio-section grey"></section>
+    <section class="portfolio-section"></section> -->
+
+    </main>
     <footer></footer>
 
 </body>
