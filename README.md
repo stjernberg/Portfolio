@@ -1,1 +1,3 @@
 # Portfolio
+
+In this project I have created my portfolio showing my skills, projects and thoughts about coding. I was given the design for this project, which Ive tried to follow as closely as possible. I just changed a ferw things like colors and fontsize. I did it responsive for desktop, tablet and mobile. The site it tested across different browsers and it is made accessible and optimized for screen readers. The only browaer that I haven't got it to work properly is Internet Explorer. There seem to be som som issue with flexbox. I can also improve the asseccibily a bit, which I will work on.
