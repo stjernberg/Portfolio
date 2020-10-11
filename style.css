@@ -1,23 +1,25 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    
     body {
         margin: 0 auto;
         font-family: 'Montserrat', sans-serif;
     }
-    /* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
-    /* ---Header-section */
     
     header {
         height: 508px;
         background: url("./assets/beach2.jpg") no-repeat center;
         background-size: cover;
-        /* background: -webkit-filter: blur(2px); */
-        /* padding-top: 30px; */
         padding: 40px 36px 0 36px;
         display: flex;
         flex-direction: column;
-        /* align-items: flex-end; */
         justify-content: space-between;
-        /* position: relative; */
     }
     
     .name {
@@ -67,39 +69,22 @@ font-family: 'Roboto', sans-serif; */
         margin-right: 5px;
         display: flex;
         align-self: flex-end;
-        /* color: #000; */
     }
-    /* width: 50px;
-height: 50px; */
-    /* border: 3px solid #fff;
-border-radius: 50%; */
     
     .header-text {
         align-self: flex-start;
     }
     
     .profile-pic {
-        /* background-image: url("./assets/profile-pic.jpg"); */
-        /* border: 3px solid #fff;
-    width: 162px;
-    height: 162px;
-    border-radius: 50%;
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: 162px 162px; */
-        /* position: absolute; */
         margin-right: 1vw;
         margin-bottom: -2vh;
-        /* margin-bottom: 0; */
         width: 150px;
         height: 150px;
         border: 3px solid #fff;
         border-radius: 50%;
-        /* margin-top: 10%;
-    margin-right: 5%; */
         align-self: flex-end;
     }
-    /* --------------Main section---------------------- */
+    /* ---------------Main section----------------------- */
     
     .portfolio-section {
         display: flex;
@@ -108,8 +93,34 @@ border-radius: 50%; */
         /* justify-content: center; */
         height: auto;
         padding: 36px 56px;
-        font-size: 17px;
+        font-size: 18px;
     }
+    
+    .grey {
+        background: #F4F4F4 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    .heading {
+        color: #6b7a99;
+        margin-top: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    
+    .text-box {
+        background: #6b7a99;
+        color: #fff;
+        font-weight: bold;
+        /* font-size: 22px; */
+        padding: 5px;
+    }
+    
+    .blue {
+        color: #6b7a99;
+        font-weight: bold;
+    }
+    /* ---------------About me-section------------------- */
     
     .line-dot {
         display: flex;
@@ -133,32 +144,16 @@ border-radius: 50%; */
         display: inline-block;
     }
     
-    .grey {
-        background: #F4F4F4 0% 0% no-repeat padding-box;
-        opacity: 1;
-    }
-    
     .text {
         text-align: left;
         /* font-size: 20px; */
-    }
-    
-    .text-box {
-        background: #6699cc;
-        color: #fff;
-        font-weight: bold;
-        /* font-size: 22px; */
-        padding: 5px;
     }
     
     .tech-text {
         text-align: center;
         /* font-size: 22px; */
     }
-    /* .tech {
-    width: 82px;
-    height: 33px;
-} */
+    /* --------------Project section---------------------- */
     
     .projects,
     .thoughts {
@@ -175,11 +170,6 @@ border-radius: 50%; */
     
     a:link {
         text-decoration: none;
-    }
-    
-    .red {
-        color: #6699cc;
-        font-weight: bold;
     }
     
     .black {
@@ -199,22 +189,36 @@ border-radius: 50%; */
     
     .projects {
         margin-top: 50px;
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .shadow {
+        box-shadow: 0 10px 10px #999;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .shadow:hover {
+        box-shadow: 5px 10px 10px #999;
     }
     
     .project-pic {
         width: 80vw;
         height: 25vh;
-        /* width: 400px;
-    height: 200px; */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        color: #6b7a99;
+        padding-top: 70px;
     }
-    /* .thought {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
+    
+    .project-pic img {
+        filter: blur(1px);
+    }
     
     .thoughts-pic {
         background-image: url("./assets/thoughts.jpg");
@@ -223,9 +227,7 @@ border-radius: 50%; */
         width: 300px;
         height: 150px;
         margin-top: 10px;
-        /* top: 50%;
-    left: 50%; */
-        /* transform: translate(-50%, -50%); */
+        align-self: center;
     }
     
     .weather {
@@ -247,27 +249,16 @@ border-radius: 50%; */
     .top {
         margin-top: 50px;
     }
+    /* ----------Thought and skills-sections */
     
     .new-row {
         flex-basis: 100%;
         height: 0;
-    }
-    
-    .heading {
-        color: #66aacc;
-        margin-top: 60px;
-        /* margin-bottom: -20px; */
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        /* font-size: 21px; */
+        text-align: center;
     }
     
     .underline {
         text-decoration: underline;
-    }
-    
-    .code {
-        display: block;
     }
     
     .skills {
@@ -280,7 +271,7 @@ border-radius: 50%; */
         width: 50%;
     }
     
-    .icon-container-red {
+    .icon-container-blue {
         margin-top: 50px;
         display: flex;
         justify-content: space-between;
@@ -288,33 +279,28 @@ border-radius: 50%; */
         justify-content: center;
     }
     
-    .icon-border-red {
-        width: 40px;
-        height: 40px;
-        border: 3px solid #3a70a6;
+    .icon-border-blue {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #6b7a99;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 15px;
     }
-    /* .col-red {
-    border: 3px solid #fa382f
-} */
     
-    .icon-red {
-        width: 20px;
-        height: 20px;
+    .icon-blue {
+        max-width: 50px;
+        max-height: 50px;
         margin-bottom: 25px;
-        /* position: fixed; */
-        /* top: 50%;
-    left: 50%; */
-        /* margin-top: -10px; */
     }
+    /* ------------footer section---------------- */
     
     footer {
         height: 200px;
-        background: #3a70a6;
+        background: #8da2b4;
+        /* background: #3a70a6; */
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -328,77 +314,84 @@ border-radius: 50%; */
     .bold {
         font-weight: bold;
     }
-    /* .details {
-    line-height: 1.6;
-} */
+    /* ---------------Media queries--------------- */
     
     @media (min-width: 750px) {
         .portfolio-section {
             display: flex;
-            justify-content: center;
+            font-size: 22px;
         }
         header {
             padding: 100px 100px 0 100px;
+        }
+        .text-container {
+            margin-bottom: 70px;
+        }
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            background-size: 180px 180px;
+            margin-top: -20%;
+            margin-right: -5%;
+        }
+        .project-display {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .projects {
+            width: 35%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+        .project-pic {
+            /* flex: 0 50%; */
+            width: 35vw;
+            height: 20vh;
+        }
+        .projects-text {
+            width: 35vw;
+        }
+        .thoughts {
+            display: flex;
+        }
+        .my-thoughts {
+            width: 35%;
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+    }
+    
+    @media (min-width:1150px) {
+        .project-pic {
+            height: 30vh;
+        }
+        .text-container {
+            margin-bottom: 80px;
+        }
+    }
+    
+    @media (min-width:1460px) {
+        .projects {
+            max-width: 30%;
+            flex-grow: 1;
+            padding: 10px;
+        }
+        .project-pic {
+            width: 25vw;
+            height: 20vh;
+        }
+        .projects-text {
+            width: 25vw;
         }
         .profile-pic {
             width: 220px;
             height: 220px;
             background-size: 220px 220px;
-            margin-top: -15%;
-            margin-right: -5%;
         }
-        .project-display {
-            display: flex;
-            /* flex-direction: row; */
-            flex-wrap: wrap;
-            justify-content: center;
+        .text-container {
+            margin-bottom: 120px;
         }
-        .projects {
-            width: 40%;
-            flex-grow: 1;
-        }
-        .project-pic {
-            flex: 0 50%;
-            width: 35vw;
-            height: 20vh;
-        }
-    }
-    
-    @media (min-width: 750px) {
-        .portfolio-section {
-            display: flex;
-            justify-content: center;
-        }
-        header {
-            padding: 100px 100px 0 100px;
-        }
-        .profile-pic {
-            width: 220px;
-            height: 220px;
-            background-size: 220px 220px;
-            margin-top: -15%;
-            margin-right: -5%;
-        }
-        .project-display {
-            display: flex;
-            /* flex-direction: row; */
-            flex-wrap: wrap;
-        }
-        .projects {
-            width: 40%;
-            flex-grow: 1;
-        }
-        .project-pic {
-            flex: 0 50%;
-            width: 35vw;
-            height: 20vh;
-        }
-    }
-    
-    @media (min-width: 990px) {
-        /* .profile-pic {
-        width: 330px;
-        height: 330px;
-        background-size: 330px 330px;
-    } */
     }
