@@ -163,7 +163,7 @@ header {
 
 .projects,
 .thoughts {
-    /* height: 1450px; */
+   
     font-family: 'Roboto', sans-serif;
     /* font-size: 22px; */
 }
@@ -171,8 +171,7 @@ header {
 .portfolio-section img {
     width: 100%;
     margin-top: 30px;
-    /* height: auto; */
-}
+}   
 
 a:link {
     text-decoration: none;
@@ -218,7 +217,7 @@ a:link {
     font-weight: bold;
     font-size: 26px;
     text-align: center;
-    color: #6b7a99;
+    color: #000;
     padding-top: 70px;
 }
 
@@ -226,15 +225,7 @@ a:link {
     filter: blur(1px);
 }
 
-.thoughts-pic {
-    background-image: url("./assets/thoughts.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 150px;
-    margin-top: 10px;
-    align-self: center;
-}
+
 
 .weather {
     background-image: url("./assets/weather-app.png");
@@ -259,6 +250,31 @@ a:link {
 
 /* ----------Thought and skills-sections */
 
+.thoughts {
+    width: 80%;
+}
+.my-thoughts{
+    margin-right: 80px;
+}
+.thoughts-pic {
+    background-image: url("./assets/thoughts.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.thinking-pic {
+    background-image: url("./assets/thinking.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+    align-self: center;
+}
 .new-row {
     flex-basis: 100%;
     height: 0;
@@ -348,8 +364,8 @@ footer {
     }
     .project-display {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
     }
     .projects {
         width: 35%;
@@ -357,6 +373,8 @@ footer {
         display: flex;
         justify-content: center;
         margin: 10px;
+       
+       
     }
     .project-pic {
         /* flex: 0 50%; */
@@ -372,7 +390,7 @@ footer {
     .my-thoughts {
         width: 35%;
         flex-grow: 1;
-        margin-right: 20px;
+        padding: 10px 20px;
     }
 }
 
