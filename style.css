@@ -298,6 +298,14 @@ align-self: flex-start;
 }
 .other-wrapper {
     margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.text-card {
+    width: 45%;
+    margin: 30px;
 }
 
 /* Specific style for thoughts - section */
@@ -363,8 +371,9 @@ align-self: flex-start;
     justify-content: center;
     border: 3px solid #52527a;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
+    padding: 7px;
     margin-top: 30px;
     margin-right: 10px;
     cursor: pointer;
