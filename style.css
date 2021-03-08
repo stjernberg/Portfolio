@@ -324,7 +324,7 @@ align-self: flex-start;
     margin-bottom: 4px;
 }
 
-.thoughts-heading {
+/* .thoughts-heading {
     font-family: 'Roboto', 'sans-serif';
     font-weight: bold;
 }
@@ -344,7 +344,7 @@ align-self: flex-start;
 .more-thoughts-link:hover {
     color: #52527a;
     transition: 0.5s ease;
-}
+} */
 
 /* Specific style for skills - section */
 
@@ -387,8 +387,9 @@ align-self: flex-start;
 
 .footer {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
+    align-items: center;
     justify-content: center;
     color: #000000; 
     background:  #8da2b4;  
@@ -398,10 +399,19 @@ align-self: flex-start;
     line-height: 2.0;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
 .footer-text {
     font-weight: bold;
 }
 
+.footer-icons{
+    margin-left: 100px;
+} 
 .email-link {
     color: #000000;
     text-decoration: none;
